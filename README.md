@@ -7,8 +7,9 @@ and there's no hosted version of this — you run it yourself, one of two ways:
 - **This local web app** (below) — a small Node.js server you run on your own
   machine, opened in your browser like any local dev tool.
 - **The browser extension** (see [`extension/`](extension/README.md)) — no
-  server at all; it runs entirely inside your own browser tab. Also
-  available as a ready-to-drag [`extension.crx`](extension.crx).
+  server at all; it runs entirely inside your own browser tab. Also available
+  as a ready-to-drag [`extension.crx`](extension.crx) or a plain
+  [`.zip`](scribd-downloader.zip).
 
 Pick whichever fits how you work. The extension is the lighter option (nothing
 to install beyond the browser itself); the web app is the one this README

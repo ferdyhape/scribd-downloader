@@ -23,10 +23,12 @@ clean, high-fidelity standalone copy — **entirely client-side, zero server**.
 
 If your browser refuses the drag-and-drop, fall back to Option B.
 
-**Option B — load from source (always works):**
+**Option B — load unpacked (always works):**
 
-1. Go to `chrome://extensions`, turn on **Developer mode**.
-2. Click **Load unpacked**, select this `extension` folder.
+1. Download [`scribd-downloader.zip`](../scribd-downloader.zip) and unzip it
+   (or just clone this repo).
+2. Go to `chrome://extensions`, turn on **Developer mode**.
+3. Click **Load unpacked**, select the `extension` folder.
 
 Either way, done in about 15 seconds — the icon appears in your toolbar.
 
