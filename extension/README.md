@@ -1,57 +1,43 @@
 # Scribd Reader (Chrome Extension)
 
-A lightweight browser extension for reading public Scribd documents without
-the blur/paywall overlay, and for opening a clean, high-fidelity standalone
-copy — **entirely client-side, with zero server load**.
-
----
+Reads public Scribd documents without the blur/paywall overlay, and opens a
+clean, high-fidelity standalone copy — **entirely client-side, zero server**.
 
 ## Features
 
-1. **Zero server load** — the whole rendering process runs on your own
-   CPU/RAM. Nothing is uploaded, nothing runs on a server anywhere.
-2. **No bot-challenge problem** — it runs inside your own real browser, so it
-   never runs into Scribd's Cloudflare/bot checks the way a server-side
-   scraper would.
-3. **Open Clean Copy** — opens the document in a new tab: a clean, standalone
-   copy, with the real page images and fonts inlined. That tab has two real
-   download actions:
-   - **Download HTML** — saves the exact, self-contained file to disk.
-   - **Download PDF** — opens the document as its own separate tab and prints
-     that tab directly, so what you see is exactly what gets printed.
-4. **Unlock & Clean Tab** — removes blur and promotional overlays directly on
-   the Scribd tab you're already reading, and enables text selection there.
-
----
+- **Zero server** — runs on your own CPU/RAM, nothing uploaded anywhere.
+- **No bot-challenge problem** — it's just your own browser, so it never
+  trips Scribd's Cloudflare/bot checks the way a server-side scraper would.
+- **Open Clean Copy** — opens the document in a new tab with real fonts and
+  images inlined, plus Download HTML and Download PDF buttons.
+- **Unlock & Clean Tab** — removes blur/promo overlays on the Scribd tab
+  you're already reading, and enables text selection there.
 
 ## Installation (Chrome / Edge / Brave)
 
-Takes about 15 seconds:
+**Option A — packaged file (fastest):**
 
-1. Open your browser (Chrome, Edge, or Brave).
-2. Go to:
-   - **Chrome / Brave:** `chrome://extensions/`
-   - **Microsoft Edge:** `edge://extensions/`
-3. Turn on **"Developer mode"** in the top-right corner.
-4. Click **"Load unpacked"** in the top-left corner.
-5. Select this **`extension`** folder.
-6. Done — the Scribd Reader icon appears in your browser's extension bar.
+1. Go to `chrome://extensions` (`edge://extensions` on Edge).
+2. Turn on **Developer mode** (top-right).
+3. Drag [`extension.crx`](../extension.crx) onto that page.
 
----
+If your browser refuses the drag-and-drop, fall back to Option B.
+
+**Option B — load from source (always works):**
+
+1. Go to `chrome://extensions`, turn on **Developer mode**.
+2. Click **Load unpacked**, select this `extension` folder.
+
+Either way, done in about 15 seconds — the icon appears in your toolbar.
 
 ## Usage
 
-1. Open any public document on [scribd.com](https://www.scribd.com) (for
-   example `https://www.scribd.com/document/...`).
-2. Click the **Scribd Reader** icon in your browser toolbar.
+1. Open any public document on [scribd.com](https://www.scribd.com).
+2. Click the **Scribd Reader** icon in your toolbar.
 3. Pick an action:
-   - **Open Clean Copy** — the extension auto-scrolls the page to load every
-     image, then opens a clean, standalone copy in a new tab, with Download
-     HTML and Download PDF buttons right there.
-   - **Unlock & Clean Tab** — removes blur and promo banners directly on the
-     page you're currently reading.
-
----
+   - **Open Clean Copy** — standalone copy in a new tab, Download HTML/PDF
+     right there.
+   - **Unlock & Clean Tab** — removes blur/promo banners on the current page.
 
 ## Scope
 

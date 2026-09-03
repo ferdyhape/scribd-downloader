@@ -6,3 +6,4 @@ cache/
 .claude/scheduled_tasks.lock
 /portfolio
 /scripts
+/extension.pem
