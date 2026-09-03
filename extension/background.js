@@ -1,5 +1,5 @@
 /**
- * Scribd Reader Extension - Background Service Worker
+ * Scribd Downloader Extension - Background Service Worker
  *
  * The offline/PDF export used to re-encode <img> elements through a canvas
  * (drawImage + toDataURL). That silently fails for every page-raster image:

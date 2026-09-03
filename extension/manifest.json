@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Scribd Reader",
+  "name": "Scribd Downloader",
   "version": "1.0.0",
   "description": "Read public Scribd documents without paywall blur, and open a clean, downloadable copy in your browser.",
   "icons": {
@@ -17,7 +17,7 @@
       "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     },
-    "default_title": "Scribd Reader"
+    "default_title": "Scribd Downloader"
   },
   "background": {
     "service_worker": "background.js"

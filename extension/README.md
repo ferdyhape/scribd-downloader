@@ -1,4 +1,4 @@
-# Scribd Reader (Chrome Extension)
+# Scribd Downloader (Chrome Extension)
 
 Reads public Scribd documents without the blur/paywall overlay, and opens a
 clean, high-fidelity standalone copy — **entirely client-side, zero server**.
@@ -33,7 +33,7 @@ Either way, done in about 15 seconds — the icon appears in your toolbar.
 ## Usage
 
 1. Open any public document on [scribd.com](https://www.scribd.com).
-2. Click the **Scribd Reader** icon in your toolbar.
+2. Click the **Scribd Downloader** icon in your toolbar.
 3. Pick an action:
    - **Open Clean Copy** — standalone copy in a new tab, Download HTML/PDF
      right there.

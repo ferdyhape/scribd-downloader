@@ -86,7 +86,7 @@
     <!-- Document Decorative Page Header Bar -->
     <rect x="180" y="152" width="96" height="12" rx="6" fill="#e2e8f0"/>
 
-    <!-- Stylized Scribd Reader 'S' Emblem inside Document -->
+    <!-- Stylized Scribd Downloader 'S' Emblem inside Document -->
     <path d="M 214 220
              C 232 198, 276 198, 298 214
              C 322 232, 318 262, 298 278

@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "scribd-reader",
+      "name": "scribd-downloader",
       "runtimeExecutable": "node",
       "runtimeArgs": ["--env-file-if-exists=.env", "server.js"],
       "port": 5000

@@ -1,5 +1,5 @@
 /**
- * Scribd Reader Extension - Popup Logic
+ * Scribd Downloader Extension - Popup Logic
  */
 
 document.addEventListener('DOMContentLoaded', async () => {

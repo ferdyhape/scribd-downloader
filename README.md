@@ -1,4 +1,4 @@
-# Scribd Reader
+# Scribd Downloader
 
 A reader for **publicly viewable** Scribd documents that renders the document
 in its own styling and offers a PDF underneath. Nothing is uploaded anywhere,

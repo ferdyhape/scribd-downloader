@@ -1,5 +1,5 @@
 /**
- * Scribd Reader Extension - Content Script (High-Fidelity Engine)
+ * Scribd Downloader Extension - Content Script (High-Fidelity Engine)
  * Replicates the exact capture flow of lib/capture.js and lib/inject.js directly in the browser.
  */
 

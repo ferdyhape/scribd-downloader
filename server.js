@@ -163,10 +163,10 @@ const BRAND_MARK_SVG = `<svg viewBox="0 0 64 64" width="23" height="23" aria-hid
   <circle cx="38.5" cy="40.2" r="1.8" fill="#347d57"/>
 </svg>`;
 
-const BRAND_HEADER = `<a class="brand" href="/"><span class="mark">${BRAND_MARK_SVG}</span>Scribd Reader</a>`;
+const BRAND_HEADER = `<a class="brand" href="/"><span class="mark">${BRAND_MARK_SVG}</span>Scribd Downloader</a>`;
 
 const SHELL = (title, body, { bodyClass = '' } = {}) => {
-  const pageTitle = title && title !== 'Scribd Reader' ? `${title} - Scribd Reader` : 'Scribd Reader';
+  const pageTitle = title && title !== 'Scribd Downloader' ? `${title} - Scribd Downloader` : 'Scribd Downloader';
 
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -484,7 +484,7 @@ function errorBody(id, message) {
 // ---------------------------------------------------------------------------
 
 app.get('/', (req, res) => {
-  res.send(SHELL('Scribd Reader', homeBody({ error: req.query.error, prefill: req.query.url || '' })));
+  res.send(SHELL('Scribd Downloader', homeBody({ error: req.query.error, prefill: req.query.url || '' })));
 });
 
 app.post('/fetch', (req, res) => {

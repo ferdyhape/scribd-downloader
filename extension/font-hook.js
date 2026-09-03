@@ -1,5 +1,5 @@
 /**
- * Scribd Reader Extension - Font Hook
+ * Scribd Downloader Extension - Font Hook
  *
  * Runs in the page's own MAIN world (see manifest.json's "world": "MAIN"),
  * auto-injected at document_start on every scribd.com page, before Scribd's
