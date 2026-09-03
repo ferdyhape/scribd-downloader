@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#36865d"/>
+      <stop offset="50%" stop-color="#2a6d4b"/>
+      <stop offset="100%" stop-color="#18432e"/>
+    </linearGradient>
+
+    <!-- Top Highlight on container -->
+    <linearGradient id="topGleam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Document Shadow -->
+    <filter id="docShadow" x="-20%" y="-15%" width="140%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#091f14" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#091f14" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Fold Flap Gradient -->
+    <linearGradient id="foldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4ebda"/>
+      <stop offset="40%" stop-color="#9bdaba"/>
+      <stop offset="100%" stop-color="#69c394"/>
+    </linearGradient>
+
+    <!-- Fold Flap Drop Shadow -->
+    <filter id="foldShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-3" dy="5" stdDeviation="4" flood-color="#143e2a" flood-opacity="0.28"/>
+    </filter>
+
+    <!-- S Emblem Gradient -->
+    <linearGradient id="sRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a6f4c"/>
+      <stop offset="50%" stop-color="#235c3f"/>
+      <stop offset="100%" stop-color="#163e2a"/>
+    </linearGradient>
+
+    <!-- Mint Line Accents -->
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#48bb78"/>
+      <stop offset="100%" stop-color="#38a169"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Icon Squircle Canvas -->
+  <rect x="16" y="16" width="480" height="480" rx="124" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle Top Highlight Rim -->
+  <rect x="18" y="18" width="476" height="230" rx="122" fill="url(#topGleam)"/>
+
+  <!-- Subtle Inner Border -->
+  <rect x="16" y="16" width="480" height="480" rx="124" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.22"/>
+
+  <!-- Group: Layered Document Graphics -->
+  <g transform="translate(4, 0)">
+    <!-- Back Stacked Document 2 (Deepest) -->
+    <rect x="120" y="86" width="268" height="344" rx="28" fill="#a7dec3" fill-opacity="0.18" transform="rotate(-9 254 258)"/>
+
+    <!-- Back Stacked Document 1 (Middle) -->
+    <rect x="122" y="86" width="268" height="344" rx="28" fill="#d2f2e2" fill-opacity="0.32" transform="rotate(-4.5 256 258)"/>
+
+    <!-- Front Primary Document Sheet -->
+    <g filter="url(#docShadow)">
+      <path d="M 136 92
+               H 300
+               L 384 176
+               V 396
+               A 28 28 0 0 1 356 424
+               H 164
+               A 28 28 0 0 1 136 396
+               Z"
+            fill="#ffffff"/>
+    </g>
+
+    <!-- Folded Page Corner (Top Right) -->
+    <path d="M 300 92
+             V 152
+             A 24 24 0 0 0 324 176
+             H 384
+             Z"
+          fill="url(#foldGradient)" filter="url(#foldShadow)"/>
+
+    <!-- Document Decorative Page Header Bar -->
+    <rect x="180" y="152" width="96" height="12" rx="6" fill="#e2e8f0"/>
+
+    <!-- Stylized Scribd Reader 'S' Emblem inside Document -->
+    <path d="M 214 220
+             C 232 198, 276 198, 298 214
+             C 322 232, 318 262, 298 278
+             C 264 304, 230 312, 230 342
+             C 230 368, 258 386, 294 380
+             C 314 376, 330 364, 342 350"
+          fill="none"
+          stroke="url(#sRibbon)"
+          stroke-width="26"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Dynamic Reading Flow / Accent Dots & Lines -->
+    <rect x="180" y="324" width="24" height="24" rx="12" fill="url(#accentLine)"/>
+    <circle cx="344" cy="226" r="10" fill="#48bb78"/>
+    
+    <!-- Subtle document horizontal guide lines (giving strong document identity) -->
+    <rect x="238" y="260" width="34" height="8" rx="4" fill="#cbd5e1" opacity="0.6"/>
+  </g>
+</svg>

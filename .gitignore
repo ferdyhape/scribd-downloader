@@ -1,0 +1,8 @@
+node_modules/
+.profile/
+cache/
+*.log
+.env
+.claude/scheduled_tasks.lock
+/portfolio
+/scripts

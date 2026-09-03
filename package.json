@@ -1,0 +1,17 @@
+{
+  "name": "scribd-reader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local web reader for publicly viewable Scribd documents",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js",
+    "stop": "bash stop.sh"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "express": "^5.1.0",
+    "playwright-core": "^1.56.0"
+  }
+}

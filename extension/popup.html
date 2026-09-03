@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scribd Reader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <img src="icons/icon-32.png" width="22" height="22" alt="Logo" class="logo">
+        <span class="brand-name">Scribd Reader</span>
+      </div>
+    </header>
+
+    <!-- Content for active Scribd Doc -->
+    <main id="docView" class="view">
+      <div class="doc-card">
+        <div class="doc-title" id="docTitle">Detecting document…</div>
+        <div class="doc-meta">
+          <span class="dot"></span>
+          <span id="pageCount">Calculating pages…</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="actions">
+        <button id="btnOffline" class="btn btn-primary" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          <span id="offlineBtnText">Open Clean Copy</span>
+        </button>
+
+        <div id="progressBox" class="progress-box hidden">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+          </div>
+          <div id="progressText" class="progress-text">Preparing pages…</div>
+        </div>
+
+        <button id="btnClean" class="btn btn-secondary" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <span>Unlock &amp; Clean Tab</span>
+        </button>
+      </div>
+
+      <p class="footnote">Only works with documents that are already public.
+        For the full library, or to support the people who upload, visit
+        <a href="https://www.scribd.com" target="_blank" rel="noopener">scribd.com</a>.</p>
+    </main>
+
+    <!-- Content when not on Scribd -->
+    <div id="emptyView" class="view hidden">
+      <div class="empty-state">
+        <div class="empty-icon">📄</div>
+        <h3>No Document Open</h3>
+        <p>Open any public document on <strong>scribd.com</strong> to read it cleanly.</p>
+        <a href="https://www.scribd.com" target="_blank" class="btn btn-secondary">Open Scribd.com</a>
+      </div>
+    </div>
+
+    <!-- Status feedback -->
+    <div id="statusMessage" class="status-msg hidden"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>by <a href="https://ferdyhape.com" target="_blank">ferdyhape.com</a></span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
